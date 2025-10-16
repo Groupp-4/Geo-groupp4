@@ -6,3 +6,13 @@ L.tileLayer(
     attribution: '&copy; ' + mapLink + ' Contributors',
     maxZoom: 18,
     }).addTo(map);
+
+    var line = turf.lineString([
+  [-97.94, 29.885],
+  [-97.935, 29.888],
+  [-97.93, 29.892]
+]);
+
+L.geoJSON(line, {
+  style: { color: 'red', weight: 4 }
+}).addTo(map);
