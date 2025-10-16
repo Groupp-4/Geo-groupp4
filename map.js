@@ -27,19 +27,19 @@ L.geoJSON(line, {
   style: { color: 'red', weight: 4 }
 }).addTo(map);
 
-//emerson 
+//emerson
 var polygon = turf.polygon([[
   [-97.94, 29.885],
   [-97.935, 29.885],
   [-97.935, 29.890],
-  [-97.94, 29.890], 
-  [-97.94, 29.885]  
+  [-97.94, 29.890],
+  [-97.94, 29.885]
 ]]);
 
 L.geoJSON(polygon, {
   style: {
-    color: 'green', 
-    weight: ,
+    color: 'green',
+    weight: 2,
     fillColor: 'lightgreen',
     fillOpacity: 0.5
   }
